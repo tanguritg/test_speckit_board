@@ -9,6 +9,10 @@ This project, `test_speckit_board`, is a component of the **Antigravity** unifie
 *   **Architecture:** To be defined.
 *   **Source Control:** [https://github.com/tanguritg/test_speckit_board.git](https://github.com/tanguritg/test_speckit_board.git)
 
+## Language Policy
+
+*   **Language:** 모든 출력과 응답은 **한국어**로 작성합니다. (All outputs and responses must be in Korean.)
+
 ## Building and Running
 
 ### Prerequisites
