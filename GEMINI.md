@@ -7,6 +7,7 @@ This project, `test_speckit_board`, is a component of the **Antigravity** unifie
 *   **Purpose:** To be defined. Based on the name, it is likely intended for testing specifications ("spec") or a dashboard-like interface ("board").
 *   **Main Technologies:** Placeholder for technologies (e.g., Python, TypeScript).
 *   **Architecture:** To be defined.
+*   **Source Control:** [https://github.com/tanguritg/test_speckit_board.git](https://github.com/tanguritg/test_speckit_board.git)
 
 ## Building and Running
 
