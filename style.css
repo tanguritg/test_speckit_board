@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --success-color: #27ae60;
+    --error-color: #e74c3c;
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --border-radius: 8px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+#processing-status {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e8f4fd;
+    border-radius: var(--border-radius);
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: var(--accent-color);
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.complaint-card {
+    border-left: 5px solid var(--accent-color);
+}
+
+.complaint-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.complaint-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.meta-small {
+    font-size: 0.75rem;
+    color: #999;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.complaint-body p {
+    margin-bottom: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.ai-response {
+    background-color: #f0f9ff;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #999;
+    padding: 3rem;
+}
+
+.ai-response p {
+    margin: 0;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.ai-response.error {
+    background-color: #fdf2f2;
+    border: 1px solid var(--error-color);
+}
+
+.staff-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ddd;
+}
+
+.btn-small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.staff-badge {
+    background-color: #8e44ad;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.status-tag {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.status-pending { background-color: #f1c40f; color: #fff; }
+.status-reviewed { background-color: #2ecc71; color: #fff; }

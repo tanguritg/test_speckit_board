@@ -1,0 +1,13 @@
+# Gemini specific
+.git/
+node_modules/
+dist/
+build/
+.env*
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,4 +1,4 @@
-# Test Speckit Board
+﻿# Test Speckit Board
 
 This project, `test_speckit_board`, is a component of the **Antigravity** unified MCP workspace. It is currently in the initial setup phase.
 

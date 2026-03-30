@@ -1,0 +1,21 @@
+# Node.js/JavaScript
+node_modules/
+dist/
+build/
+*.log
+.env*
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Local data (if using for storage mock later)
+db.json
+storage/
+
+# Playwright MCP context
+.playwright-mcp/
